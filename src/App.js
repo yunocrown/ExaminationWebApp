@@ -5,12 +5,6 @@ import {
   useLocation,
 } from "react-router-dom";
 import Desktop3 from "./pages/Desktop3";
-import Desktop9 from "./pages/Desktop9";
-import Desktop8 from "./pages/Desktop8";
-import Desktop7 from "./pages/Desktop7";
-import Desktop6 from "./pages/Desktop6";
-import Desktop5 from "./pages/Desktop5";
-import Desktop4 from "./pages/Desktop4";
 import { useEffect } from "react";
 
 function App() {
@@ -34,30 +28,6 @@ function App() {
         title = "";
         metaDescription = "";
         break;
-      case "/desktop-9":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/desktop-8":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/desktop-7":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/desktop-6":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/desktop-5":
-        title = "";
-        metaDescription = "";
-        break;
-      case "/desktop-4":
-        title = "";
-        metaDescription = "";
-        break;
     }
 
     if (title) {
@@ -77,12 +47,6 @@ function App() {
   return (
       <Routes>
         <Route path="/" element={<Desktop3 />} />
-        <Route path="/desktop-9" element={<Desktop9 />} />
-        <Route path="/desktop-8" element={<Desktop8 />} />
-        <Route path="/desktop-7" element={<Desktop7 />} />
-        <Route path="/desktop-6" element={<Desktop6 />} />
-        <Route path="/desktop-5" element={<Desktop5 />} />
-        <Route path="/desktop-4" element={<Desktop4 />} />
       </Routes>
   );
 }
